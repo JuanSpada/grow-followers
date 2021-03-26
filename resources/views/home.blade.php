@@ -70,14 +70,15 @@
                                 <input type="hidden" name="hosted_button_id" value="QMNCEK3HXQJV8">
                                 <table>
                                 <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
-                                    <option value="Mensual">Mensual : $45,00 USD - mensual</option>
-                                    <option value="Anual">Anual : $350,00 USD - anual</option>
+                                    <option value="Mensual">Mensual : $29,00 USD - mensual</option>
+                                    <option value="Anual">Anual : $230,00 USD - anual</option>
                                 </select> </td></tr>
                                 </table>
                                 <input type="hidden" name="currency_code" value="USD">
                                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                                 <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
                                 </form>
+                                
                                 
                                 
                         </div>
