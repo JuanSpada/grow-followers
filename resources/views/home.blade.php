@@ -55,31 +55,34 @@
                 </div>
                 @endif --}}
 
-                {{-- DESCUENTO PARA EL RESTO DEL MUNDO --}}
-                <div id="card-body" class="card-body">
-                        <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">50% OFF</h4>
-                            <p>Solo por este mes estamos ofreciendo un 50% de descuento.</p>
+                @if (Auth::user()->estado == 0)
+                    {{-- DESCUENTO PARA EL RESTO DEL MUNDO --}}
+                    <div id="card-body" class="card-body">
+                            <div class="alert alert-success" role="alert">
+                                <h4 class="alert-heading">50% OFF</h4>
+                                <p>Solo por este mes estamos ofreciendo un 50% de descuento.</p>
+                            </div>
+                        {{-- <h3 class="card-title text-primary">Una Semana Gratis!</h3> --}}
+                        <p class="card-text mt-2">Una ves completada la suscripción seras redireccionado a configurar tu cuenta, una ves hecho eso el sistema automáticamente empieza a correr en tu cuenta.</p>
+                        <div class="d-flex justify-content-center">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="QMNCEK3HXQJV8">
+                                <table>
+                                <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
+                                    <option value="Mensual">Mensual : $45,00 USD - mensual</option>
+                                    <option value="Anual">Anual : $350,00 USD - anual</option>
+                                </select> </td></tr>
+                                </table>
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                                
                         </div>
-                    {{-- <h3 class="card-title text-primary">Una Semana Gratis!</h3> --}}
-                    <p class="card-text mt-2">Una ves completada la suscripción seras redireccionado a configurar tu cuenta, una ves hecho eso el sistema automáticamente empieza a correr en tu cuenta.</p>
-                    <div class="d-flex justify-content-center">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="QMNCEK3HXQJV8">
-                            <table>
-                            <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
-                                <option value="Mensual">Mensual : $45,00 USD - mensual</option>
-                                <option value="Anual">Anual : $350,00 USD - anual</option>
-                            </select> </td></tr>
-                            </table>
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                            </form>
-                            
                     </div>
-                </div>
+                    
+                @endif
                 {{-- SI EL CLIENTE ESTA ACTIVO O USUARIO ADMIN --}}
                 @if(Auth::user()->estado == 1 || Auth::user()->estado == 9)
                 <div id="card-body" class="card-body">
