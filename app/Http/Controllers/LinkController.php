@@ -95,13 +95,19 @@ class LinkController extends Controller
     }
 
     public function cache(){
-        Artisan::call('cache:clear');
+        Artisan::call('cache:clear', [
+            '--force' => true
+        ]);
     }
     public function migrate(){
-        Artisan::call('migrate');
+        Artisan::call('migrate', [
+            '--force' => true
+        ]);
     }
     public function artisankey(){
-        Artisan::call('key:generate');
+        Artisan::call('key:generate', [
+            '--force' => true
+        ]);
     }
 
     public function crearCustomizations(){
