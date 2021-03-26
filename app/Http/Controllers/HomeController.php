@@ -35,6 +35,7 @@ class HomeController extends Controller
 
     public function update(Request $request){
 
+        echo '<pre>' . var_export($request, true) . '</pre>';
         $user = User::find(Auth::User()->id);
 
         $user->cuenta = $request['cuenta'];
@@ -69,7 +70,7 @@ class HomeController extends Controller
         $customizations[0]->save();
         if($user->estado != 9 && $user->cliente == 1){
             $user->estado = 3;
-            Mail::to('info@masfollows.com')->send(new ClienteRevision());
+            Mail::to('info@growfollowers.life')->send(new ClienteRevision());
         }
         $user->save();
         return redirect('/home');

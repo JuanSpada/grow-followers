@@ -24,11 +24,11 @@
                         <div class="col-lg-6">
                             <label for="hashtag1">Hashtag 1:</label>
                             <input name="hashtag1" id="hashtag1" class="form-control   mb-3" type="text" placeholder="Ingrese # aquí" value="{{ Auth::user()->hashtag1 }}">
-                            <label for="hashtag2">Hashtag 3:</label>
+                            <label for="hashtag2">Hashtag 2:</label>
                             <input name="hashtag3" id="hashtag3" class="form-control   mb-3" type="text" placeholder="Ingrese # aquí" value="{{ Auth::user()->hashtag3 }}">
                         </div>
                         <div class="col-lg-6">
-                            <label for="hashtag3">Hashtag 2:</label>
+                            <label for="hashtag3">Hashtag 3:</label>
                             <input name="hashtag2" id="hashtag2" class="form-control   mb-3" type="text" placeholder="Ingrese # aquí" value="{{ Auth::user()->hashtag2 }}">
                             <label for="hashtag4">Hashtag 4:</label>
                             <input name="hashtag4" id="hashtag4" class="form-control   mb-3" type="text" placeholder="Ingrese # aquí" value="{{ Auth::user()->hashtag4 }}">
