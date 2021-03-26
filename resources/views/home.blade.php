@@ -55,7 +55,7 @@
                 </div>
                 @endif --}}
 
-                @if (Auth::user()->estado == 0)
+                @if (Auth::user()->cliente == 0)
                     {{-- DESCUENTO PARA EL RESTO DEL MUNDO --}}
                     <div id="card-body" class="card-body">
                             <div class="alert alert-success" role="alert">
