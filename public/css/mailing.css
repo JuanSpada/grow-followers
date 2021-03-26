@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+
+body{
+  font-family: sans-serif;
+}
+
+ul{
+  padding: 0;
+}
+a, a:hover{
+  direction: none;
+  color: black;
+}
