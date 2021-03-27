@@ -63,7 +63,7 @@
                                 <p>Solo por este mes estamos ofreciendo un 50% de descuento.</p>
                             </div>
                         {{-- <h3 class="card-title text-primary">Una Semana Gratis!</h3> --}}
-                        <p class="card-text mt-2">Una ves completada la suscripción seras redireccionado a configurar tu cuenta, una ves hecho eso el sistema automáticamente empieza a correr en tu cuenta.</p>
+                        <p class="card-text mt-2">Una vez completado estos datos y completado el pago en Paypal el sistema automáticamente empieza a correr con tu cuenta.</p>
                         <div class="d-flex justify-content-center">
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                 <input type="hidden" name="cmd" value="_s-xclick">
@@ -78,7 +78,6 @@
                                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                                 <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
                                 </form>
-                                
                                 
                                 
                         </div>
