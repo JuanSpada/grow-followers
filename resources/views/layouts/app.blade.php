@@ -108,13 +108,11 @@
       </li>
 	  
       <!-- Nav Item - Tables -->
-    @if(isset(Auth::user()->cliente) && Auth::user()->cliente == 1)
       <li class="nav-item active">
         <a class="nav-link" href="{{route ('configurar')}}">
           <i class="fas fa-fw fa-table"></i>
         <span>Configurar</span></a>
       </li>
-    @endif
 	  <!-- Divider -->
 	  <hr class="sidebar-divider d-none d-md-block">
     {{-- <p class="ml-4 text-white">Estado:</p> --}}

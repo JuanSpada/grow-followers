@@ -35,7 +35,6 @@ class HomeController extends Controller
 
     public function update(Request $request){
 
-        echo '<pre>' . var_export($request, true) . '</pre>';
         $user = User::find(Auth::User()->id);
 
         $user->cuenta = $request['cuenta'];

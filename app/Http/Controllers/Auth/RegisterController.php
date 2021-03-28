@@ -33,7 +33,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/configurar';
 
     /**
      * Create a new controller instance.
@@ -99,7 +99,7 @@ class RegisterController extends Controller
             
         Auth::loginUsingId($user->id);
 
-        return redirect('home');
+        return redirect('configurar');
     }
         
 }
